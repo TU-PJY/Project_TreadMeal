@@ -14,6 +14,8 @@ int WIDTH = WindowWidth;
 int HEIGHT = WindowHeight;
 int PREV_WIDTH, PREV_HEIGHT;
 
+bool CameraControllerActivated;
+
 GLfloat ASPECT;
 Rect rect;
 glm::vec3 BackColor;

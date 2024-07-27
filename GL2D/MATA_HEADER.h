@@ -16,6 +16,8 @@ extern int WIDTH, HEIGHT;
 extern int PREV_WIDTH, PREV_HEIGHT;
 extern GLfloat ASPECT;
 
+extern bool CameraControllerActivated;
+
 // corner position of display
 struct Rect {
 	GLfloat lx, ly, rx, ry;

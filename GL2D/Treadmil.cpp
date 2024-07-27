@@ -27,13 +27,13 @@ void Treadmil::Render() {
 	Scale(StripeSize, StripeSize);
 
 	if (StripeDir == 1) {
-		Move(StripeX + ((0.3 - StripeSize) * 0.2), StripeY);
-		RenderImage(Stripe, 1.0, 50, 100);
+		Move(StripeX + ((0.4 - StripeSize) * 0.2), StripeY);
+		RenderImage(Stripe, 1.0, 100, 150);
 	}
 
 	else {
-		Move(StripeX - ((0.3 - StripeSize) * 0.2), StripeY);
-		RenderImage(Stripe, 1.0, 50, 100, Flip::Vertical);
+		Move(StripeX - ((0.4 - StripeSize) * 0.2), StripeY);
+		RenderImage(Stripe, 1.0, 100, 150, Flip::Vertical);
 	}
 
 	EndColorClipping();
@@ -59,7 +59,7 @@ void Treadmil::Update(float FT) {
 			StripeDir = 1;
 		}
 
-		StripeSize = 0.3;
+		StripeSize = 0.4;
 		StripeY = -1.2;
 	}
 }

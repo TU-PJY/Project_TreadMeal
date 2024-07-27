@@ -10,9 +10,6 @@
     <Filter Include="[1]___________[ Object ]\[1][ Main Object ]">
       <UniqueIdentifier>{d6d673e8-1784-4513-a51f-e1fb334d2ea5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="[1]___________[ Object ]\[3][ Object Base ]">
-      <UniqueIdentifier>{f67944b9-c91f-464e-976e-0b8958cf7ab9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="[3]___________[ Util ]">
       <UniqueIdentifier>{019278b2-60d4-4cad-b935-d813a31f2c87}</UniqueIdentifier>
     </Filter>
@@ -39,9 +36,6 @@
     </Filter>
     <Filter Include="[2]___________[ GameMode ]">
       <UniqueIdentifier>{824d0f24-8e5b-4c58-99e5-e019f51ea99a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="[2]___________[ GameMode ]\[ Mode1 ]">
-      <UniqueIdentifier>{7b8ece9e-369e-41aa-9eb1-0f0dc2f9398d}</UniqueIdentifier>
     </Filter>
     <Filter Include="[3]___________[ Util ]\[ Sound Util ]">
       <UniqueIdentifier>{22512964-c0e1-42b6-8ae0-9c32d227bc22}</UniqueIdentifier>
@@ -82,13 +76,22 @@
     <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]">
       <UniqueIdentifier>{cff45559-2c5a-43a5-9d41-d0cfc838adb8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="[1]___________[ Object ]\[3][ Static Object ]">
+      <UniqueIdentifier>{0599173d-7b99-448f-9198-241c442d242e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[1]___________[ Object ]\[4][ Object Base ]">
+      <UniqueIdentifier>{f67944b9-c91f-464e-976e-0b8958cf7ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[2]___________[ GameMode ]\[ PlayMode ]">
+      <UniqueIdentifier>{7b8ece9e-369e-41aa-9eb1-0f0dc2f9398d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlayMode.cpp">
-      <Filter>[2]___________[ GameMode ]\[ Mode1 ]</Filter>
+      <Filter>[2]___________[ GameMode ]\[ PlayMode ]</Filter>
     </ClCompile>
     <ClCompile Include="Base.cpp">
-      <Filter>[1]___________[ Object ]\[3][ Object Base ]</Filter>
+      <Filter>[1]___________[ Object ]\[4][ Object Base ]</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="CameraUtil.cpp">
@@ -142,16 +145,19 @@
     <ClCompile Include="Treadmil.cpp">
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]</Filter>
     </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>[1]___________[ Object ]\[3][ Static Object ]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayMode.h">
-      <Filter>[2]___________[ GameMode ]\[ Mode1 ]</Filter>
+      <Filter>[2]___________[ GameMode ]\[ PlayMode ]</Filter>
     </ClInclude>
     <ClInclude Include="MATA_HEADER.h">
       <Filter>[4]___________[ mata_ENGINE-2 ]</Filter>
     </ClInclude>
     <ClInclude Include="Base.h">
-      <Filter>[1]___________[ Object ]\[3][ Object Base ]</Filter>
+      <Filter>[1]___________[ Object ]\[4][ Object Base ]</Filter>
     </ClInclude>
     <ClInclude Include="CameraUtil.h">
       <Filter>[3]___________[ Util ]\[ Camera Util ]</Filter>
@@ -203,6 +209,9 @@
     </ClInclude>
     <ClInclude Include="Treadmil.h">
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>[1]___________[ Object ]\[3][ Static Object ]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
