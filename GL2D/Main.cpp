@@ -32,7 +32,7 @@ Framework fw;
 // frametime values
 float PrevTime, CurrentTime, DeltaTime;
 
-#include "Mode1.h"
+#include "PlayMode.h"
 
 GLvoid DisplayReshape(int w, int h) {
 	glViewport(0, 0, w, h);
@@ -114,7 +114,7 @@ void main(int argc, char** argv) {
 	soundUtil.Init();
 	camera.Init();
 		
-	fw.Init(Mode1::GameMode1, Mode1::SetController);
+	fw.Init(Play_Mode::PlayMode, Play_Mode::SetController);
 
 	glutDisplayFunc(GLMain);
 	glutReshapeFunc(DisplayReshape);

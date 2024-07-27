@@ -2,9 +2,9 @@
 #include "MouseUtil.h"
 #include <string>
 
-namespace Mode1 {
+namespace Play_Mode {
 	void SetController();
-	std::string GameMode1();
+	std::string PlayMode();
 
 	void ProcessKeyboard(unsigned char KEY, int S_KEY, bool KeyDown, bool SpecialKey);
 	void ProcessMouse(int button, int state, int x, int y);

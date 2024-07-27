@@ -76,9 +76,15 @@
     <Filter Include="[4]___________[ mata_ENGINE-2 ]">
       <UniqueIdentifier>{b19c2cd5-f7dc-4a85-9cfa-b0749b68ceea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]">
+      <UniqueIdentifier>{07702f49-020d-4ab9-937a-d8ab9081d8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]">
+      <UniqueIdentifier>{cff45559-2c5a-43a5-9d41-d0cfc838adb8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Mode1.cpp">
+    <ClCompile Include="PlayMode.cpp">
       <Filter>[2]___________[ GameMode ]\[ Mode1 ]</Filter>
     </ClCompile>
     <ClCompile Include="Base.cpp">
@@ -133,9 +139,12 @@
     <ClCompile Include="AnimationUtil.cpp">
       <Filter>[3]___________[ Util ]\[ AnimationUtil ]</Filter>
     </ClCompile>
+    <ClCompile Include="Treadmil.cpp">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Mode1.h">
+    <ClInclude Include="PlayMode.h">
       <Filter>[2]___________[ GameMode ]\[ Mode1 ]</Filter>
     </ClInclude>
     <ClInclude Include="MATA_HEADER.h">
@@ -191,6 +200,9 @@
     </ClInclude>
     <ClInclude Include="AnimationUtil.h">
       <Filter>[3]___________[ Util ]\[ AnimationUtil ]</Filter>
+    </ClInclude>
+    <ClInclude Include="Treadmil.h">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -151,7 +151,7 @@
     <ClCompile Include="ResourceList.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ImageUtil.cpp" />
-    <ClCompile Include="Mode1.cpp" />
+    <ClCompile Include="PlayMode.cpp" />
     <ClCompile Include="MouseUtil.cpp" />
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="PhysicsUtil.cpp" />
@@ -161,6 +161,7 @@
     <ClCompile Include="SoundUtil.cpp" />
     <ClCompile Include="TextUtil.cpp" />
     <ClCompile Include="TimerUtil.cpp" />
+    <ClCompile Include="Treadmil.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationUtil.h" />
@@ -172,7 +173,7 @@
     <ClInclude Include="Framework_Conf.h" />
     <ClInclude Include="MATA_HEADER.h" />
     <ClInclude Include="ImageUtil.h" />
-    <ClInclude Include="Mode1.h" />
+    <ClInclude Include="PlayMode.h" />
     <ClInclude Include="MouseUtil.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="PhysicsUtil.h" />
@@ -182,6 +183,7 @@
     <ClInclude Include="SoundUtil.h" />
     <ClInclude Include="TextUtil.h" />
     <ClInclude Include="TimerUtil.h" />
+    <ClInclude Include="Treadmil.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ModeTemplate.txt" />
