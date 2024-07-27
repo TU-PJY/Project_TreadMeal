@@ -24,11 +24,7 @@ std::string Play_Mode::PlayMode() {
 	fw.AddObject(new Treadmil, "treadmil", Layer::L3);
 
 	// 카메라 컨트롤러
-	// 모드 최초 실행 시에만 추가되는 정적 오브젝트
-	if (!CameraControllerActivated) {
-		fw.AddObject(new CameraController, "cam_controller", Layer::L1, true);
-		CameraControllerActivated = true;
-	}
+	fw.AddObject(new CameraController, "cam_controller", Layer::L1);
 
 	return __func__;
 }
