@@ -22,7 +22,7 @@ void Treadmil::Render() {
 
 	// 줄 오브젝트
 	// 위로 이동할 수록 크기가 점차 작아지고 작아진 수치 만큼 x축으로 이동한다
-	// 1이면 오른쪽방향, 0이면 왼쪽 방향에 렌더링
+	// 1이면 오른쪽 방향, -1이면 왼쪽 방향에 렌더링
 	BeginProcess(ImageRenderMode::Default);
 	Scale(StripeSize, StripeSize);
 
@@ -50,15 +50,14 @@ void Treadmil::Update(float FT) {
 		if (StripeDir == 1) {
 			StripeX = -0.62;
 			MoveDegree = 76.8;
-			StripeDir = 0;
 		}
 
 		else {
 			StripeX = 0.62;
 			MoveDegree = 103.2;
-			StripeDir = 1;
 		}
 
+		StripeDir *= -1;
 		StripeSize = 0.4;
 		StripeY = -1.2;
 	}

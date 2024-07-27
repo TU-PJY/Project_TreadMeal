@@ -11,6 +11,7 @@ std::vector<ImageInfo> ImageList
 	{"MATA_ENGINE_LOGO", "MATA_ENGINE_RES//Image//Common//MATA_ENGINE Logo.png"},
 	////////
 
+	// playmode image
 	{"treadmil", "res//sprite//main object//treadmil.png"},
 	{"treadmil_prop", "res//sprite//main object//treadmil_prop.png"},
 };

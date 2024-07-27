@@ -8,7 +8,7 @@ private:
 	GLfloat StripeX = 0.62, StripeY = -1.2;
 	GLfloat MoveDegree = 103.2;
 	GLfloat StripeSize = 0.3;
-	int StripeDir = 1;  // 1:right, 0:left
+	int StripeDir = 1;  // 1:right, -1:left
 
 	GLfloat MoveSpeed{};
 	
