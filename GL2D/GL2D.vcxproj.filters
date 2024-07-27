@@ -76,14 +76,14 @@
     <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]">
       <UniqueIdentifier>{cff45559-2c5a-43a5-9d41-d0cfc838adb8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="[1]___________[ Object ]\[3][ Static Object ]">
-      <UniqueIdentifier>{0599173d-7b99-448f-9198-241c442d242e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="[1]___________[ Object ]\[4][ Object Base ]">
-      <UniqueIdentifier>{f67944b9-c91f-464e-976e-0b8958cf7ab9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="[2]___________[ GameMode ]\[ PlayMode ]">
       <UniqueIdentifier>{7b8ece9e-369e-41aa-9eb1-0f0dc2f9398d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[1]___________[ Object ]\[3][ Object Base ]">
+      <UniqueIdentifier>{f67944b9-c91f-464e-976e-0b8958cf7ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]">
+      <UniqueIdentifier>{74491309-44c1-4433-aa59-17030ef50ba9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -91,7 +91,7 @@
       <Filter>[2]___________[ GameMode ]\[ PlayMode ]</Filter>
     </ClCompile>
     <ClCompile Include="Base.cpp">
-      <Filter>[1]___________[ Object ]\[4][ Object Base ]</Filter>
+      <Filter>[1]___________[ Object ]\[3][ Object Base ]</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="CameraUtil.cpp">
@@ -146,7 +146,7 @@
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]</Filter>
     </ClCompile>
     <ClCompile Include="CameraController.cpp">
-      <Filter>[1]___________[ Object ]\[3][ Static Object ]</Filter>
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +157,7 @@
       <Filter>[4]___________[ mata_ENGINE-2 ]</Filter>
     </ClInclude>
     <ClInclude Include="Base.h">
-      <Filter>[1]___________[ Object ]\[4][ Object Base ]</Filter>
+      <Filter>[1]___________[ Object ]\[3][ Object Base ]</Filter>
     </ClInclude>
     <ClInclude Include="CameraUtil.h">
       <Filter>[3]___________[ Util ]\[ Camera Util ]</Filter>
@@ -211,7 +211,7 @@
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Treadmil ]</Filter>
     </ClInclude>
     <ClInclude Include="CameraController.h">
-      <Filter>[1]___________[ Object ]\[3][ Static Object ]</Filter>
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

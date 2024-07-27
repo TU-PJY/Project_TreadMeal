@@ -2,14 +2,12 @@
 #include "Framework.h"
 
 class CameraController : public BASE {
-public:
+private:
 	// 카메라 회전 각도, 위치
 	GLfloat Rotation{};
 	glm::vec2 Position{};
 
-	// 현재 마우스 위치
-	GLfloat MousePosition{};
-
+public:
 	CameraController();
 	void Update(float FT);
 };
