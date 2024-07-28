@@ -7,6 +7,9 @@ private:
 	GLfloat Rotation{};
 	glm::vec2 Position{};
 
+	// 카메라 움직임 애니메이션 유틸
+	LoopSinAnimation LSA_X, LSA_Y;
+
 public:
 	CameraController();
 	void Update(float FT);

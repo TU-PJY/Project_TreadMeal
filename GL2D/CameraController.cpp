@@ -14,6 +14,13 @@ void CameraController::Update(float FT) {
 	// 카메라 회전 각도가 0.0이 아니면 다시 0.0으로 선형 보간 복귀
 	Rotation = std::lerp(Rotation, 0.0, 20 * FT);
 
+	// 카메라를 천천히 움직인다
+	Position.x = LSA_X.Update(0.05, FT * 3.0);
+	Position.y = LSA_Y.Update(0.025, FT * 1.5);
+
+	// 카메라 위치 조정
+	camera.Move(Position.x, Position.y);
+
 	// 카메라 회전
 	camera.Rotate(Rotation);
 

@@ -12,6 +12,7 @@ std::vector<ImageInfo> ImageList
 	////////
 
 	// playmode image
+	// 에르핀 이미지
 	{"treadmil", "res//sprite//main object//treadmil.png"},
 	{"treadmil_prop", "res//sprite//main object//treadmil_prop.png"},
 	{"erpin", "res//sprite//main object//erpin.png"},
