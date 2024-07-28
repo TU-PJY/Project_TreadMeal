@@ -85,6 +85,9 @@
     <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]">
       <UniqueIdentifier>{74491309-44c1-4433-aa59-17030ef50ba9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpine ]">
+      <UniqueIdentifier>{af2e7972-f5d0-49f0-bc4d-b25b977f31ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlayMode.cpp">
@@ -147,6 +150,9 @@
     </ClCompile>
     <ClCompile Include="CameraController.cpp">
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]</Filter>
+    </ClCompile>
+    <ClCompile Include="Erpin.cpp">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpine ]</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +218,9 @@
     </ClInclude>
     <ClInclude Include="CameraController.h">
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]</Filter>
+    </ClInclude>
+    <ClInclude Include="Erpin.h">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpine ]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

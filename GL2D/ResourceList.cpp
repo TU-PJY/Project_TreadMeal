@@ -14,6 +14,10 @@ std::vector<ImageInfo> ImageList
 	// playmode image
 	{"treadmil", "res//sprite//main object//treadmil.png"},
 	{"treadmil_prop", "res//sprite//main object//treadmil_prop.png"},
+	{"erpin", "res//sprite//main object//erpin.png"},
+	{"erpin_wing", "res//sprite//main object//erpin_wing.png"},
+	{"erpin_face_normal", "res//sprite//main object//erpin_face_normal.png"},
+	{"erpin_face_eat", "res//sprite//main object//erpin_face_eat.png"},
 };
 
 std::vector<FileNameAndOption> SoundList

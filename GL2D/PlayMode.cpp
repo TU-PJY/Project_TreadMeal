@@ -5,6 +5,7 @@
 
 #include "Treadmil.h"
 #include "CameraController.h"
+#include "Erpin.h"
 
 MouseUtil mouse;
 
@@ -23,8 +24,14 @@ std::string Play_Mode::PlayMode() {
 	// 카메라 컨트롤러, 가장 아래의 레이어에서 업데이트되는 무형 객체
 	fw.AddObject(new CameraController, "cam_controller", Layer::L1);
 
+	// 에르핀 오브젝트
+	fw.AddObject(new Erpin, "erpin", Layer::L2);
+
 	// 트레드밀 오브젝트
 	fw.AddObject(new Treadmil, "treadmil", Layer::L3);
+
+	// 커서 숨김
+	glutSetCursor(GLUT_CURSOR_NONE);
 
 	return __func__;
 }

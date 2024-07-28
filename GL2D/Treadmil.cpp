@@ -5,11 +5,11 @@ Treadmil::Treadmil() {
 	SetImage(Stripe, "treadmil_prop");
 
 	// 초기 속도 0.5
-	MoveSpeed = 0.5;
+	MoveSpeed = 3;
 }
 
 void Treadmil::Render() {
-	// 트레드밀 위에 줄 오브젝트를 컬러 클리핑 한다
+	//// 트레드밀 위에 줄 오브젝트를 컬러 클리핑 한다
 	BeginColorClipping();
 
 	// 트레드밀
