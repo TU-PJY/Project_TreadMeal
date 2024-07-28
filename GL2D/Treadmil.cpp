@@ -49,12 +49,12 @@ void Treadmil::Update(float FT) {
 	if (StripeY >= 0.3) {
 		if (StripeDir == 1) {
 			StripeX = -0.62;
-			MoveDegree = 76.8;
+			MoveDegree = 76.4;
 		}
 
 		else {
 			StripeX = 0.62;
-			MoveDegree = 103.2;
+			MoveDegree = 103.6;
 		}
 
 		StripeDir *= -1;

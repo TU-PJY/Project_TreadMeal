@@ -108,7 +108,7 @@ void main(int argc, char** argv) {
 	shaderUtil.LoadFragmentShader("MATA_ENGINE_RES//GLSL//Fragment_Text.glsl");
 	shaderUtil.CreateShader(TextShader);
 
-	SetBackColor(0.3, 0.3, 0.3);
+	SetBackColor(0.5, 0.5, 0.5);
 
 	imageUtil.Init();
 	soundUtil.Init();
