@@ -11,15 +11,24 @@ std::vector<ImageInfo> ImageList
 	{"MATA_ENGINE_LOGO", "MATA_ENGINE_RES//Image//Common//MATA_ENGINE Logo.png"},
 	////////
 
-	// playmode image
-	// 에르핀 이미지
+	///// playmode image
+	// 트레드밀 이미지
 	{"treadmil", "res//sprite//treadmil//treadmil.png"},
+	{"treadmil_debug", "res//sprite//treadmil//treadmil_debug.png"},
 	{"treadmil_prop", "res//sprite//treadmil//treadmil_prop.png"},
+
+	// 에르핀 이미지
 	{"erpin", "res//sprite//erpin//erpin.png"},
 	{"erpin_wing", "res//sprite//erpin//erpin_wing.png"},
 	{"erpin_face_normal", "res//sprite//erpin//erpin_face_normal.png"},
 	{"erpin_face_blink", "res//sprite//erpin//erpin_face_blink.png"},
 	{"erpin_face_eat", "res//sprite//erpin//erpin_face_eat.png"},
+
+	// 음식 이미지
+	// 초콜릿 이미지
+	{"chocolate_outside", "res//sprite//food//chocolate_outside.png"},
+	{"chocolate_inside", "res//sprite//food//chocolate_inside.png"},
+	/////
 };
 
 std::vector<FileNameAndOption> SoundList

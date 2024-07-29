@@ -51,6 +51,7 @@ public:
 	void LookAt(GLfloat FromX, GLfloat FromY, GLfloat ToX, GLfloat ToY, GLfloat& RotationVar, GLfloat RotationSpeed, float FT);
 	void LookAt(GLfloat Rotation, GLfloat& RotationVar, GLfloat RotationSpeed, float FT);
 	void SetColor(GLfloat R, GLfloat G, GLfloat B);
+	void SetColorRGB(int R, int G, int B);
 	glm::vec4 ViewportPosition();
 
 	void SetImage(unsigned int& Image, std::string ImageName);
@@ -92,6 +93,9 @@ public:
 	virtual AABB GetAABB() { return {}; }
 	virtual OBB GetOBB() { return{}; }
 	virtual Range GetRange() { return {}; }
+
+	//treadmil
+	virtual GLfloat GetSpeed() { return {}; }
 
 private:
 	void ProcessTransform(); 

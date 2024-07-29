@@ -113,6 +113,14 @@ void BASE::SetColor(GLfloat R, GLfloat G, GLfloat B) {
 	ObjectColor.b = B;
 }
 
+void BASE::SetColorRGB(int R, int G, int B) {
+	GLfloat ConvertedR = GLfloat(R) / 255.0 * 1.0;
+	GLfloat ConvertedG = GLfloat(G) / 255.0 * 1.0;
+	GLfloat ConvertedB = GLfloat(B) / 255.0 * 1.0;
+
+	SetColor(ConvertedR, ConvertedG, ConvertedB);
+}
+
 void BASE::SetImage(unsigned int& Image, std::string ImageName) {
 	imageUtil.SetImage(Image, ImageName);
 }

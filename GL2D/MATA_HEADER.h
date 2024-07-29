@@ -46,8 +46,22 @@ struct FileNameAndOption {
 extern std::vector<ImageInfo> ImageList;
 extern std::vector<FileNameAndOption> SoundList;
 
+// 트레드밀 라인 별 오브젝트 움직이는 각도
+constexpr GLfloat FIRST_LINE_DEGREE = 79.4;
+constexpr GLfloat SECOND_LINE_DEGREE = 85.0;
+constexpr GLfloat THIRD_LINE_DEGREE = 90;
+constexpr GLfloat FOURTH_LINE_DEGREE = 95.0;
+constexpr GLfloat FIFTH_LINE_DEGREE = 100.6;
+
+// 트레드밀 라인 별 오브젝트 초기 x 위치
+constexpr GLfloat FIRST_LINE_POSITION = -0.54;
+constexpr GLfloat SECOND_LINE_POSITION = -0.265;
+constexpr GLfloat THIRD_LINE_POSITION = 0.0;
+constexpr GLfloat FOURTH_LINE_POSITION = 0.265;
+constexpr GLfloat FIFTH_LINE_POSITION = 0.54;
+
 // window name
-constexpr const char* WindowName = "MATA_ENGINE-1";
+constexpr const char* WindowName = "Erpin Game";
 
 // window size
 constexpr int WindowWidth = 1200;

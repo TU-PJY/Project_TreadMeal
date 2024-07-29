@@ -18,8 +18,11 @@ private:
 	// 날개 상하 왕복 애니메이션
 	LoopSinAnimation LSA_Wing;
 
+	AABB aabb;
+
 public:
 	Erpin();
+	AABB GetAABB();
 	void Update(float FT);
 	void Render();
 };

@@ -6,6 +6,7 @@
 #include "Treadmil.h"
 #include "CameraController.h"
 #include "Erpin.h"
+#include "Generator.h"
 
 MouseUtil mouse;
 
@@ -21,8 +22,11 @@ void Play_Mode::SetController() {
 }
 
 std::string Play_Mode::PlayMode() {
-	// 카메라 컨트롤러, 가장 아래의 레이어에서 업데이트되는 무형 객체
+	// 카메라 컨트롤러
 	fw.AddObject(new CameraController, "cam_controller", Layer::L1);
+
+	// 음식 생성기
+	fw.AddObject(new Generator, "generator", Layer::L1);
 
 	// 에르핀 오브젝트
 	fw.AddObject(new Erpin, "erpin", Layer::L2);

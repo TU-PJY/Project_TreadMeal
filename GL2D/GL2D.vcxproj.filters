@@ -85,8 +85,14 @@
     <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]">
       <UniqueIdentifier>{74491309-44c1-4433-aa59-17030ef50ba9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpine ]">
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpin ]">
       <UniqueIdentifier>{af2e7972-f5d0-49f0-bc4d-b25b977f31ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Chocolate ]">
+      <UniqueIdentifier>{45dfbfc2-8819-4cb6-b8d3-b9cad765d35e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Generator ]">
+      <UniqueIdentifier>{aa996dce-9b94-415d-8376-14ae0a0c0499}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -152,7 +158,13 @@
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]</Filter>
     </ClCompile>
     <ClCompile Include="Erpin.cpp">
-      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpine ]</Filter>
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpin ]</Filter>
+    </ClCompile>
+    <ClCompile Include="Chocolate.cpp">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Chocolate ]</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Generator ]</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -220,7 +232,13 @@
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Camera Controller ]</Filter>
     </ClInclude>
     <ClInclude Include="Erpin.h">
-      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpine ]</Filter>
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Erpin ]</Filter>
+    </ClInclude>
+    <ClInclude Include="Chocolate.h">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Chocolate ]</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Generator ]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,16 @@
 #include "Treadmil.h"
 
 Treadmil::Treadmil() {
+	//SetImage(Body, "treadmil_debug");
 	SetImage(Body, "treadmil");
 	SetImage(Stripe, "treadmil_prop");
 
 	// 초기 속도 0.5
-	MoveSpeed = 3;
+	MoveSpeed = 1.0;
+}
+
+GLfloat Treadmil::GetSpeed() {
+	return MoveSpeed;
 }
 
 void Treadmil::Render() {
@@ -27,12 +32,12 @@ void Treadmil::Render() {
 	Scale(StripeSize, StripeSize);
 
 	if (StripeDir == 1) {
-		Move(StripeX + ((0.4 - StripeSize) * 0.2), StripeY);
+		Move(StripeX + ((0.4 - StripeSize) * 0.2), StripeY - (0.4 - StripeSize) * 0.2);
 		RenderImage(Stripe, 1.0, 100, 150);
 	}
 
 	else {
-		Move(StripeX - ((0.4 - StripeSize) * 0.2), StripeY);
+		Move(StripeX - ((0.4 - StripeSize) * 0.2), StripeY - (0.4 - StripeSize) * 0.2);
 		RenderImage(Stripe, 1.0, 100, 150, Flip::Vertical);
 	}
 
@@ -41,20 +46,19 @@ void Treadmil::Render() {
 
 void Treadmil::Update(float FT) {
 	// 주어진 각도로 오브젝트 이동
-	StripeX += cos(glm::radians(MoveDegree)) * MoveSpeed * FT;
-	StripeY += sin(glm::radians(MoveDegree)) * MoveSpeed * FT;
-	StripeSize -= MoveSpeed * 0.1 * FT;
+	MoveForward(StripeX, StripeY, MoveSpeed, MoveDegree, FT);
+	StripeSize -= MoveSpeed * 0.05 * FT;
 
 	// 높이가 0.3 이상 되면 줄의 방향과 위치를 반대로 전환
 	if (StripeY >= 0.3) {
 		if (StripeDir == 1) {
 			StripeX = -0.62;
-			MoveDegree = 76.4;
+			MoveDegree = 77.1;
 		}
 
 		else {
 			StripeX = 0.62;
-			MoveDegree = 103.6;
+			MoveDegree = 102.9;
 		}
 
 		StripeDir *= -1;

@@ -8,6 +8,12 @@ Erpin::Erpin() {
 	SetImage(NormalFace, "erpin_face_normal");
 	SetImage(BlinkFace, "erpin_face_blink");
 	SetImage(EatFace, "erpin_face_eat");
+
+	aabb.Init();
+}
+
+AABB Erpin::GetAABB() {
+	return aabb;
 }
 
 void Erpin::Update(float FT) {
@@ -43,6 +49,8 @@ void Erpin::Update(float FT) {
 		BlinkState = false;
 		BlinkTimer.Reset();
 	}
+
+	aabb.Update(Position, -0.12, 0.1, 0.05);
 }
 
 void Erpin::Render() {
@@ -71,4 +79,9 @@ void Erpin::Render() {
 	}
 	else
 		RenderImage(EatFace);
+
+	aabb.BeginProcess();
+	aabb.Move(Position, -0.12);
+	aabb.Scale(0.1, 0.05);
+	aabb.Render(true);
 }
