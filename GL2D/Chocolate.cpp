@@ -102,11 +102,13 @@ void Chocolate::Update(float FT) {
 
 	// 에르핀이 먹으면 바로 삭제한다
 	if (auto erpin = fw.Find("erpin"); erpin)
+
+		// aabb 충돌처리
 		if (!FallingState && aabb.CheckCollision(erpin->GetAABB())) {
 			// 에르핀 EatState 활성화
 			erpin->SetEatState();
 
-			// 음식 파편 추가
+			// 음식 파티클 추가
 			for (int i = 0; i < 4; ++i) {
 				if (Position.x < 0)
 					fw.AddObject(new FoodDebris(Position.x - (0.2 - Size) * 0.2, R, G, B), "food_debris", Layer::L2);

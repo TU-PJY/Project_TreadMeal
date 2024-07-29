@@ -12,6 +12,8 @@ private:
 	GLfloat Speed{};
 	GLfloat FallingAcc{};
 
+	GLfloat TransparencyValue = 1.0;
+
 	RandomUtil Rand;
 	PhysicsUtil PU;
 
