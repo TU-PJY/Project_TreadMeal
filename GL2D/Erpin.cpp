@@ -7,13 +7,21 @@ Erpin::Erpin() {
 	SetImage(Wing, "erpin_wing");
 	SetImage(NormalFace, "erpin_face_normal");
 	SetImage(BlinkFace, "erpin_face_blink");
-	SetImage(EatFace, "erpin_face_eat");
+	SetImage(EatFace1, "erpin_face_eat_1");
+	SetImage(EatFace2, "erpin_face_eat_2");
 
 	aabb.Init();
 }
 
 AABB Erpin::GetAABB() {
 	return aabb;
+}
+
+// 먹기 상태가 활성화 되고 먹기 애니메이션 유지 타이머가 초기화된다
+void Erpin::SetEatState() {
+	EatState = true;
+	EatStateTimerResetState = false;
+	AnimationTimer.Reset();
 }
 
 void Erpin::Update(float FT) {
@@ -38,19 +46,41 @@ void Erpin::Update(float FT) {
 
 	// 눈 깜빡임 업데이트
 	// 3초마다 눈을 깜빡인다
-	BlinkTimer.Update(FT);
-	if (!BlinkState && BlinkTimer.Sec() >= 3) {
-		BlinkState = true;
-		BlinkTimer.Reset();
+	// 먹기 상태가 아닐 때만 업데이트
+	if (!EatState) {
+		BlinkTimer.Update(FT);
+		if (!BlinkState && BlinkTimer.Sec() >= 3) {
+			BlinkState = true;
+			BlinkTimer.Reset();
+		}
+
+		// 눈 깜빡임 활성화 상태일 때는 0.2초후 눈 깜빡임을 비활성화 한다
+		else if (BlinkState && BlinkTimer.MiliSec() >= 0.2) {
+			BlinkState = false;
+			BlinkTimer.Reset();
+		}
 	}
 
-	// 눈 깜빡임 활성화 상태일 때는 0.2초후 눈 깜빡임을 비활성화 한다
-	else if (BlinkState && BlinkTimer.MiliSec() >= 0.2) {
-		BlinkState = false;
-		BlinkTimer.Reset();
+	// 먹기 상태 애니메이션 업데이트
+	if (EatState) {
+		// 0.5초동안 먹기 애니메이션을 재생한다
+		EatAnimationTimer.Update(FT * 20);
+		AnimationTimer.Update(FT);
+		Frame = int(EatAnimationTimer.MiliSec(2)) % 2;
+		EatWobbleValue = LSA_Wobble.Update(0.05, FT * 40);
+		
+		// 0.5초가 지나면 상태가 기본 상태로 초기화 된다
+		if (AnimationTimer.MiliSec() >= 0.5) {
+			EatAnimationTimer.Reset();
+			AnimationTimer.Reset();
+			LSA_Wobble.Reset();
+			EatWobbleValue = 0.0;
+			EatState = false;
+		}
 	}
 
-	aabb.Update(Position, -0.12, 0.1, 0.05);
+	// aabb 바운드 박스 업데이트
+	aabb.Update(Position, -0.1, 0.1, 0.05);
 }
 
 void Erpin::Render() {
@@ -63,9 +93,9 @@ void Erpin::Render() {
 
 	// 에르핀 몸통
 	BeginProcess(ImageRenderMode::Default);
-	Move(Position , 0.1);
+	Move(Position , 0.1 + EatWobbleValue * 0.2);
 	Rotate(Rotation);
-	Scale(1.5, 1.5);
+	Scale(1.5, 1.5 + EatWobbleValue);
 	RenderImage(Body, 1.0, 360, 256);
 
 	// 에르핀 얼굴
@@ -77,11 +107,17 @@ void Erpin::Render() {
 		else
 			RenderImage(NormalFace);
 	}
-	else
-		RenderImage(EatFace);
+	else {
+		if(Frame == 1)
+			RenderImage(EatFace1);
 
+		else if(Frame == 0)
+			RenderImage(EatFace2);
+	}
+
+	// aabb 바운드박스 렌더링
 	aabb.BeginProcess();
-	aabb.Move(Position, -0.12);
+	aabb.Move(Position, -0.1);
 	aabb.Scale(0.1, 0.05);
 	aabb.Render(true);
 }

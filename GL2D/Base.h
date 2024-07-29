@@ -97,6 +97,9 @@ public:
 	//treadmil
 	virtual GLfloat GetSpeed() { return {}; }
 
+	// erpin
+	virtual void SetEatState() {}
+
 private:
 	void ProcessTransform(); 
 	GLfloat NormalizeDegree(GLfloat Degree);

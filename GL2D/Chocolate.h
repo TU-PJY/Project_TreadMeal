@@ -9,7 +9,7 @@ private:
 	GLfloat MoveSpeed{};
 	GLfloat Size = 0.2;
 
-	int Line{};
+	int Line = 1;
 	int ColorSet{};
 	int R{}, G{}, B{};
 	RandomUtil Rand;

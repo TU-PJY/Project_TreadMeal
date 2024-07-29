@@ -4,7 +4,10 @@
 class Generator : public BASE {
 private:
 	TimerUtil Timer;
+	RandomUtil Rand;
 	GLfloat GenTime{};
+	GLfloat NextGenTime{};
+	GLfloat RandomDelay{};
 
 public:
 	Generator();

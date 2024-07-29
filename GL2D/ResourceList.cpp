@@ -22,7 +22,8 @@ std::vector<ImageInfo> ImageList
 	{"erpin_wing", "res//sprite//erpin//erpin_wing.png"},
 	{"erpin_face_normal", "res//sprite//erpin//erpin_face_normal.png"},
 	{"erpin_face_blink", "res//sprite//erpin//erpin_face_blink.png"},
-	{"erpin_face_eat", "res//sprite//erpin//erpin_face_eat.png"},
+	{"erpin_face_eat_1", "res//sprite//erpin//erpin_face_eat_1.png"},
+	{"erpin_face_eat_2", "res//sprite//erpin//erpin_face_eat_2.png"},
 
 	// 음식 이미지
 	// 초콜릿 이미지

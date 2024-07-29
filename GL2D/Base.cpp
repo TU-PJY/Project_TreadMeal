@@ -50,12 +50,12 @@ void BASE::MoveForward(GLfloat& X, GLfloat& Y, GLfloat Speed, int MoveDirection,
 
 void BASE::MoveForward(GLfloat& X, GLfloat& Y, GLfloat Speed, GLfloat RotationValue, float FT, bool Plus90Option) {
 	if (Plus90Option) {
-		X += Speed * cos(glm::radians(RotationValue + 90)) * FT;
-		Y += Speed * sin(glm::radians(RotationValue + 90)) * FT;
+		X += Speed * FT * cos(glm::radians(RotationValue + 90));
+		Y += Speed * FT * sin(glm::radians(RotationValue + 90));
 	}
 	else {
-		X += Speed * cos(glm::radians(RotationValue)) * FT;
-		Y += Speed * sin(glm::radians(RotationValue)) * FT;
+		X += Speed * FT * cos(glm::radians(RotationValue));
+		Y += Speed * FT * sin(glm::radians(RotationValue));
 	}
 }
 
