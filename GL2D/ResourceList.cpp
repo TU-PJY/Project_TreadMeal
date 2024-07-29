@@ -29,6 +29,9 @@ std::vector<ImageInfo> ImageList
 	// 초콜릿 이미지
 	{"chocolate_outside", "res//sprite//food//chocolate_outside.png"},
 	{"chocolate_inside", "res//sprite//food//chocolate_inside.png"},
+
+	// 음식 파편 이미지
+	{"debris", "res//sprite//food//debris.png"},
 	/////
 };
 

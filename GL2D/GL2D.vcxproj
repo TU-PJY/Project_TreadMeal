@@ -150,6 +150,7 @@
     <ClCompile Include="DataUtil.cpp" />
     <ClCompile Include="Erpin.cpp" />
     <ClCompile Include="FontLoaderUtil.cpp" />
+    <ClCompile Include="FoodDebris.cpp" />
     <ClCompile Include="Framework.cpp" />
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="ResourceList.cpp" />
@@ -176,6 +177,7 @@
     <ClInclude Include="DataUtil.h" />
     <ClInclude Include="Erpin.h" />
     <ClInclude Include="FontLoaderUtil.h" />
+    <ClInclude Include="FoodDebris.h" />
     <ClInclude Include="Framework.h" />
     <ClInclude Include="Framework_Conf.h" />
     <ClInclude Include="Generator.h" />

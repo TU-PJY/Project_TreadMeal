@@ -94,6 +94,9 @@
     <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Generator ]">
       <UniqueIdentifier>{aa996dce-9b94-415d-8376-14ae0a0c0499}</UniqueIdentifier>
     </Filter>
+    <Filter Include="[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Debris ]">
+      <UniqueIdentifier>{d50f0b53-e08b-4531-81d5-ad1e27ce34df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlayMode.cpp">
@@ -165,6 +168,9 @@
     </ClCompile>
     <ClCompile Include="Generator.cpp">
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Generator ]</Filter>
+    </ClCompile>
+    <ClCompile Include="FoodDebris.cpp">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Debris ]</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +245,9 @@
     </ClInclude>
     <ClInclude Include="Generator.h">
       <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Generator ]</Filter>
+    </ClInclude>
+    <ClInclude Include="FoodDebris.h">
+      <Filter>[1]___________[ Object ]\[1][ Main Object ]\[ PlayMode ]\[ Food Debris ]</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

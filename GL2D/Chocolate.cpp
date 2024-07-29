@@ -1,4 +1,5 @@
 #include "Chocolate.h"
+#include "FoodDebris.h"
 
 Chocolate::Chocolate() {
 	SetImage(InSide, "chocolate_inside");
@@ -104,6 +105,17 @@ void Chocolate::Update(float FT) {
 		if (!FallingState && aabb.CheckCollision(erpin->GetAABB())) {
 			// 에르핀 EatState 활성화
 			erpin->SetEatState();
+
+			// 음식 파편 추가
+			for (int i = 0; i < 4; ++i) {
+				if (Position.x < 0)
+					fw.AddObject(new FoodDebris(Position.x - (0.2 - Size) * 0.2, R, G, B), "food_debris", Layer::L2);
+				else if (Position.x > 0)
+					fw.AddObject(new FoodDebris(Position.x + (0.2 - Size) * 0.2, R, G, B), "food_debris", Layer::L2);
+				if (Position.x < 0)
+					fw.AddObject(new FoodDebris(Position.x, R, G, B), "food_debris", Layer::L2);
+			}
+
 			fw.DeleteSelf(this);
 		}
 }
